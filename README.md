@@ -13,7 +13,7 @@ Q. ** What is the Audience for CILOGON of Jlab**
 
     | Token Profile    | Grant Types  | Scopes| Audience |
     | -------- | ------- | -------- |---------|
-    | WLCG  | toke_exchange, token_refresh, authorization_code | openID, profile, rucio | ? |
+    | WLCG  | toke_exchange, token_refresh, authorization_code | `openID`, `profile` | ? |
 
 
 ### Rucio Admin client
@@ -22,7 +22,7 @@ Q. ** What is the Audience for CILOGON of Jlab**
 
     | Token Profile    | Grant Types  | Scopes| Audience |
     | -------- | ------- | -------- | --------|
-    | WLCG  | client_credentials | scim:read | ? |
+    | WLCG  | client_credentials | `scim:read` | ? |
 
 
 ## FTS3
@@ -32,4 +32,4 @@ Q. ** What is the Audience for CILOGON of Jlab**
 
     | Token Profile    | Grant Types  | Scopes| Audience |
     | -------- | ------- | -------- | --------|
-    | WLCG  | offline_access| storage.read:/ storage.create:/ storage.modify:/ fts | ? |
+    | WLCG  | offline_access| `storage.read:/` ,  `storage.create:/` , `storage.modify:/` ,   `fts` | ? |

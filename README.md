@@ -1,6 +1,3 @@
-# cilogon_jlab
-
-
 # Jefferson Lab CILOGON Policy 
 
 ## Rucio
@@ -13,8 +10,11 @@ Q. ** What is the Audience for CILOGON of Jlab**
 
     | Token Profile    | Grant Types  | Scopes| Audience |
     | -------- | ------- | -------- |---------|
-    | WLCG  | toke_exchange, token_refresh, authorization_code | `openID`, `profile` | ? |
+    | WLCG  | token_exchange, token_refresh, authorization_code | `openID`, `profile` | ? |
 
+
+    - Access token lifetime : 1 hour 
+    - Allow token for COU : `CO:COU:eic:members:active`
 
 ### Rucio Admin client
 - OIDC Client ID: `cilogon:/client_id/68adabb818f03f802efe43eb806d35f5`
@@ -25,11 +25,16 @@ Q. ** What is the Audience for CILOGON of Jlab**
     | WLCG  | client_credentials | `scim:read` | ? |
 
 
+    - Access token lifetime : 1 hour 
+
 ## FTS3
-- OIDC Client ID: `Need to create it`
+- OIDC Client ID: `cilogon:/client_id/7539b687ee887157195a9dc1aefb3fc2`
 
 - Policy:
 
     | Token Profile    | Grant Types  | Scopes| Audience |
     | -------- | ------- | -------- | --------|
-    | WLCG  | offline_access| `storage.read:/` ,  `storage.create:/` , `storage.modify:/` ,   `fts` | ? |
+    | WLCG  | token_exchange, token_refresh | `storage.read:/` ,  `storage.create:/` , `storage.modify:/` ,  `fts`, `openID`, `profile`, `email`, `offline_access`| ? |
+
+
+    - Access token lifetime : 1 hour 

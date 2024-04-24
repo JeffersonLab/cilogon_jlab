@@ -42,7 +42,7 @@ Q. ** What is the Audience for CILOGON of Jlab**
 
     | Token Profile    | Grant Types  | Scopes| Audience |
     | -------- | ------- | -------- | --------|
-    | WLCG  | token_exchange, token_refresh | `storage.read:/eic` ,  `storage.create:/eic` , `storage.modify:/eic` ,  `fts`,  `offline_access` | ? |
+    | WLCG  | token_exchange, token_refresh | `storage.read:/eic/` ,  `storage.create:/eic/` , `storage.modify:/eic/` ,  `fts`,  `offline_access` | ? |
 
 
     - Access token lifetime : 1 hour 
